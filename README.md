@@ -2,11 +2,12 @@
 Create / Read / Update / Delete
 
 ⚙️ This project was developed with the following technologies:
-PHP
-Laravel
-MySQL
+.PHP
+.Laravel
+.MySQL
+
 🔧 Architecture used:
-MVC
+.MVC
 
 
 
