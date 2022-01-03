@@ -8,9 +8,9 @@
     <form name="formCad" id="formCad" method="POST" action="{{url('books/create')}}">
       @csrf
       
-      <input class="form-control mt-2" type="text" name="title" id="title" placeholder="Título">
-      <input class="form-control mt-2" type="text" name="genero" id="genero" placeholder="Gênero">
-      <input class="form-control mt-2" type="text" name="autor" id="autor" placeholder="Autor">
+      <input class="form-control mt-2" type="text" name="title" id="title" placeholder="Título" required>
+      <input class="form-control mt-2" type="text" name="genero" id="genero" placeholder="Gênero" required>
+      <input class="form-control mt-2" type="text" name="autor" id="autor" placeholder="Autor" required>
 
       <input class="btn btn-primary mt-4" type="submit" value="cadastrar">
     </form>

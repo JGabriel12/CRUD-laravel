@@ -11,7 +11,7 @@ class PhotoController extends Controller
     private $objBook;
     public function __construct()
     {
-        $this->objBook = new ModelBook();
+        ModelBook::All();
     }
 
     /**
@@ -21,7 +21,7 @@ class PhotoController extends Controller
      */
     public function index()
     {
-        $book = $this->objBook->all();
+        $book = ModelBook::All();
         return view('index', compact('book'));
     }
 
@@ -43,7 +43,7 @@ class PhotoController extends Controller
      */
     public function store(Request $request)
     {
-        $cadastro = $this->objBook->create([
+        $cadastro = ModelBook::create([
             'title' => $request->title,
             'genero' => $request->genero,
             'autor' => $request->autor
@@ -61,7 +61,7 @@ class PhotoController extends Controller
      */
     public function show($id)
     {
-        $book = $this->objBook->find($id);
+        $book = ModelBook::All()->find($id);
         return view('show', compact('book'));
     }
 
