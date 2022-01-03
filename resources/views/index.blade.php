@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CRUD com laravel</title>
-</head>
-<body>
-  <h1>Bem vindo</h1>
-  
-</body>
-</html>
+@extends('templates.template')
+
+@section('content')
+  <h1 class="title text-uppercase text-center">Cadastro de livros</h1>
+@endsection
