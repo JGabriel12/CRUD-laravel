@@ -3,9 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Models\ModelBook;
 
 class PhotoController extends Controller
 {
+
+    private $objBook;
+    public function __construct()
+    {
+        $this->objBook = new ModelBook();
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +21,8 @@ class PhotoController extends Controller
      */
     public function index()
     {
-        return view(view: 'index');
+        $book = $this->objBook->all();
+        return view('index', compact('book'));
     }
 
     /**
