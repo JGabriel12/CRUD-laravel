@@ -73,7 +73,8 @@ class PhotoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $book = ModelBook::all()->find($id);
+        return view('create', compact('book'));
     }
 
     /**
@@ -85,7 +86,12 @@ class PhotoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        ModelBook::where(['id' => $id])->update([
+            'title' => $request->title,
+            'genero' => $request->genero,
+            'autor' => $request->autor
+        ]);
+        return redirect('books');
     }
 
     /**

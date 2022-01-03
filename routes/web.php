@@ -20,9 +20,9 @@ Route::get('/books/create', 'App\Http\Controllers\PhotoController@create');
 
 Route::get('/books/{books}', 'App\Http\Controllers\PhotoController@show');
 
-
-/* Route::get('/editar', 'App\Http\Controllers\PhotoController@edit');
-
+Route::get('/books/{books}/edit/', 'App\Http\Controllers\PhotoController@edit');
+ 
+/*
 Route::get('/excluir', function () {
     return view('welcome');
 });  */
