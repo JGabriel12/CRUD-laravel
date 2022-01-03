@@ -54,7 +54,8 @@ class PhotoController extends Controller
      */
     public function show($id)
     {
-        return view(view: 'show');
+        $book = $this->objBook->find($id);
+        return view('show', compact('book'));
     }
 
     /**

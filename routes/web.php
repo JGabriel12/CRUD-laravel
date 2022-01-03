@@ -14,15 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::get('/', [PhotoController::class, "index"]);
-Route::get('/', 'App\Http\Controllers\PhotoController@index');
+Route::get('/books', 'App\Http\Controllers\PhotoController@index');
 
 Route::get('/cadastro', 'App\Http\Controllers\PhotoController@create');
 
-Route::get('/listar', 'App\Http\Controllers\PhotoController@show');
 
 
-Route::get('/editar', 'App\Http\Controllers\PhotoController@edit');
+Route::get('/books/{books}', 'App\Http\Controllers\PhotoController@show');
+
+
+/* Route::get('/editar', 'App\Http\Controllers\PhotoController@edit');
 
 Route::get('/excluir', function () {
     return view('welcome');
-});
+});  */

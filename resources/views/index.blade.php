@@ -26,7 +26,7 @@
         <td>{{$books->genero}}</td>
         <td>{{$books->autor}}</td>
         <td>
-          <a href=""><button class="btn btn-dark">Vizualizar</button></a>
+          <a href="{{url("books/$books->id")}}"><button class="btn btn-dark">Vizualizar</button></a>
           <a href=""><button class="btn btn-primary">Editar</button></a>
           <a href=""><button class="btn btn-danger">Deletar</button></a>
         </td>
