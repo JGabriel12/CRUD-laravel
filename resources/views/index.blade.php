@@ -4,7 +4,7 @@
   <h1 class="title text-uppercase text-center mt-4 mb-4">Cadastro de livros</h1>
   <hr>
   <div class="text-center mt-3 mb-4">
-    <a href=""><button class="btn btn-success">Cadastrar</button></a>
+    <a href="{{url('books/create')}}"><button class="btn btn-success">Cadastrar</button></a>
   </div>
 
   <div class="col-8 m-auto">

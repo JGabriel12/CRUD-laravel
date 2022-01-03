@@ -9,4 +9,5 @@
     Gênero: {{$book->genero}}<br>
     Autor: {{$book->autor}}<br>
   </div>
+  <a href="{{url("books")}}"><button class="btn btn-success mt-5">Voltar</button></a>
 @endsection

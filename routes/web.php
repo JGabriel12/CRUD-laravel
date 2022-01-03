@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', [PhotoController::class, "index"]);
 Route::get('/books', 'App\Http\Controllers\PhotoController@index');
 
-Route::get('/cadastro', 'App\Http\Controllers\PhotoController@create');
-
-
+Route::get('/books/create', 'App\Http\Controllers\PhotoController@create');
 
 Route::get('/books/{books}', 'App\Http\Controllers\PhotoController@show');
 

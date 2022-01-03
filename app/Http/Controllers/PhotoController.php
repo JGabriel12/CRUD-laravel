@@ -32,7 +32,7 @@ class PhotoController extends Controller
      */
     public function create()
     {
-        return view(view: 'create');
+        return view('create');
     }
 
     /**
@@ -43,7 +43,14 @@ class PhotoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $cadastro = $this->objBook->create([
+            'title' => $request->title,
+            'genero' => $request->genero,
+            'autor' => $request->autor
+        ]);
+        if ($cadastro) {
+            return redirect('books');
+        }
     }
 
     /**
