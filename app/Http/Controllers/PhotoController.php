@@ -102,6 +102,11 @@ class PhotoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        ModelBook::where(['id' => $id])->delete([
+            'title' => $request->title,
+            'genero' => $request->genero,
+            'autor' => $request->autor
+        ]);
+        return redirect('books');
     }
 }

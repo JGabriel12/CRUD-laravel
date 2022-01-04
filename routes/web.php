@@ -21,6 +21,8 @@ Route::get('/books/create', 'App\Http\Controllers\PhotoController@create');
 Route::get('/books/{books}', 'App\Http\Controllers\PhotoController@show');
 
 Route::get('/books/{books}/edit/', 'App\Http\Controllers\PhotoController@edit');
+
+Route::get('/books/{books}/destroy/', 'App\Http\Controllers\PhotoController@destroy');
  
 /*
 Route::get('/excluir', function () {

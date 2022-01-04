@@ -28,7 +28,7 @@
         <td>
           <a href="{{url("books/$books->id")}}"><button class="btn btn-dark">Vizualizar</button></a>
           <a href="{{"books/$books->id/edit"}}"><button class="btn btn-primary">Editar</button></a>
-          <a href=""><button class="btn btn-danger">Deletar</button></a>
+          <a href="{{"books/$books->id/destroy"}}"><button class="btn btn-danger">Deletar</button></a>
         </td>
       </tr>
       @endforeach()
